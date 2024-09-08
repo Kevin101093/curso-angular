@@ -10,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'mi-primera-aplicacion';
+  saludo = 'Hola soy Kevin';
 }
