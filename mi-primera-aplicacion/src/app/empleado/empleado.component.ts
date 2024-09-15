@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './empleado.component.html',
-  styleUrl: './empleado.component.css'
+  //styleUrl: './empleado.component.css'
+  styles:['p{background-color:red}'] //Es de forma inline.
 })
 export class EmpleadoComponent {
 
