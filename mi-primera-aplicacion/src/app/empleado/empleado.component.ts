@@ -21,4 +21,12 @@ export class EmpleadoComponent {
   }
    */
 
+  habilitacionCuadroTexto = true;
+
+  usuRegistrado = false;
+
+  getRegistroUsuario(){
+    this.usuRegistrado = false;
+  }
+
 }
