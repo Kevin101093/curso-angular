@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-empleado',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './empleado.component.html',
   styleUrl: './empleado.component.css'
   //styles:['p{background-color:red}'] //Es de forma inline.
@@ -13,7 +14,12 @@ export class EmpleadoComponent {
   nombre = 'Juan';
   apellido = 'Días';
   edad = 18;
-  empresa = ''
+  empresa = 'Google'
+
+  //Función  para realizar el event bidding
+  /*cambiaEmpresa(event:Event){
+    this.empresa=(<HTMLInputElement>event.target).value;
+  }*/
 
   //Método obtener
   /*getEdad(){

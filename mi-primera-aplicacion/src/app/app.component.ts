@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { EmpleadosComponent } from "./empleados/empleados.component";
 import { EmpleadoComponent } from "./empleado/empleado.component";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
