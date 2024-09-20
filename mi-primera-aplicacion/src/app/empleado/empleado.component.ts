@@ -22,11 +22,22 @@ export class EmpleadoComponent {
    */
 
   habilitacionCuadroTexto = true;
+  textoDeRegistro = "No hay usuario registrado";
 
   usuRegistrado = false;
 
   getRegistroUsuario(){
     this.usuRegistrado = false;
+  }
+
+  setUsuarioRegistrado(event:Event){
+    //alert('El usuario se acaba de registrar');
+    //this.textoDeRegistro = "El usuario se acaba de registrar";
+    if((<HTMLInputElement>event.target).value=="si"){
+        this.textoDeRegistro = "El usuario se acaba de registrar";
+    }else{
+      this.textoDeRegistro = "El usuario no esta registrado";
+    }
   }
 
 }
